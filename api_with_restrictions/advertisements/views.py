@@ -10,8 +10,6 @@ from advertisements.serializers import AdvertisementSerializer
 
 class AdvertisementViewSet(ModelViewSet):
     """ViewSet для объявлений."""
-    # TODO: настройте ViewSet, укажите атрибуты для кверисета,
-    #   сериализаторов и фильтров
     queryset = Advertisement.objects.all()
     serializer_class = AdvertisementSerializer
     filter_backends = [DjangoFilterBackend, SearchFilter, OrderingFilter]
