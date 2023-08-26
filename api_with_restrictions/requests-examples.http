@@ -23,10 +23,10 @@ Authorization: Token 17ca626fa2f633769c0060bc33b6c6753aa6bff2
 # попытка поменять объявление
 PATCH {{baseUrl}}/advertisements/1/
 Content-Type: application/json
-Authorization: Token c7f2ed1dca2da5054eb9006a161c46a4e9bfe424
+Authorization: Token 17ca626fa2f633769c0060bc33b6c6753aa6bff2
 
 {
-  "status": "CLOSE"
+  "status": "CLOSED"
 }
 
 ###
@@ -40,6 +40,7 @@ Content-Type: application/json
 # фильтрация по дате
 GET {{baseUrl}}/advertisements/?created_at_before=2020-10-01
 Content-Type: application/json
+Authorization: Token 17ca626fa2f633769c0060bc33b6c6753aa6bff2
 
 ###
 DELETE {{baseUrl}}/advertisements/2/
