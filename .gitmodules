@@ -1,0 +1,3 @@
+[submodule "stocks_products/stocks_products/docker-s-django"]
+	path = stocks_products/stocks_products/docker-s-django
+	url = https://github.com/Shuraken999/docker-s-django.git
